@@ -22,7 +22,7 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({type,title,summary,img,link,github}) => {
     return(
-        <article className='w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark shadow-2xl p-12 dark:border-light
+        <article className='w-full flex flex-col sm:inline-block items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark shadow-2xl p-12 dark:border-light
         lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
             <Link href={link} target='_blank' 
             className='w-full xs:w-full cursor-pointer overflow-hidden rounded-lg '>
@@ -110,8 +110,8 @@ const DescProject = ({title,summary,img,link,github}) => {
                 <div className='mt-2 flex items-center gap-4'>
                     <Link href={github} target='_blank'><GithubIcon className="w-8 dark:w-8 xs:w-10"/></Link>
                     <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-white dark:text-dark 
-                    sm:px-4 sm:text-base'>Visit Project</Link>
-                    <div className='flex gap-3'>
+                    sm:px-4 sm:text-sm sm:text-center'>Visit Project</Link>
+                    <div className='flex gap-3 sm:hidden'>
                         {isHovering && (
                             <Image src={gif1} alt="BawaSen" className="w-[300px] absolute mt-12 z-20 h-auto lg:hidden md:w-full"/>
                         )}
@@ -171,8 +171,8 @@ const OngoingProject = ({type,title,summary,img,link,github,dataset,proposal}) =
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='flex gap-6'>
-                    <Link href={dataset} target='_blank' className='bg-orange-500 text-light py-2 px-3 rounded-md'>Dataset</Link>
-                    <Link href={proposal} target='_blank' className='bg-pink-500 text-light py-2 px-3 rounded-md' download={true}>Sample Proposal</Link>
+                    <Link href={dataset} target='_blank' className='bg-orange-500 text-light py-2 px-3 rounded-md sm:py-1 items-center text-center'>Dataset</Link>
+                    <Link href={proposal} target='_blank' className='bg-pink-500 text-light py-2 px-3 rounded-md sm:py-1 items-center text-center' download={true}>Sample Proposal</Link>
                 </div>
                 
                 {/* <div className='mt-2 flex items-center'>
@@ -235,7 +235,7 @@ const projects = () => {
                 className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
 
                 <div className='grid grid-cols-12 gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <FeaturedProject
                             title="Tour Management System"
                             summary="A system for introducing foriegners in Sri Lanka about the touring and tour sections, and to indtroduce new customize tours that suits everybody. This system also allows to book a tour (booking is in demo-mode)."
