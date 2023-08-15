@@ -8,11 +8,11 @@ const Footer = () => {
         <Layout className='py-8 flex items-center justify-between dark:text-light lg:flex-col lg:py-6'>
             <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
             <div>
-                <Link href="https://fusedsite.web.app/" 
+                <Link href="#" 
                 className='underline underline-offset-2'>BawangaSenevirathne</Link>
             </div>
             <div className='flex items-center lg:py-2'>
-            <Link href="https://fusedsite.web.app/" target={"_blank"}>Say Hello</Link> <span className='text-primary text-2xl px-1 dark:text-primaryDark'>&#9825;</span>
+            <Link href="#" target={"_blank"}>Say Hello</Link> <span className='text-primary text-2xl px-1 dark:text-primaryDark'>&#9825;</span>
             </div>
             
         </Layout>

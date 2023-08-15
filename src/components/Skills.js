@@ -76,19 +76,19 @@ const Skills = () => {
             <Skill name="JAVASCRIPT" x="20vw" y="6vw"/>
             <Skill name="ReactJS" x="-0vw" y="12vw"/>
             <Skill name="NextJS" x="-20vw" y="-15vw"/>
-            <Skill name="GatsbyJS" x="15vw" y="-12vw"/>
+            <Skill name="UI Design" x="15vw" y="-12vw"/>
             <Skill name="Web Desgin" x="27vw" y="-15vw"/>
             <Skill name="Figma" x="0vw" y="-20vw"/>
             <Skill name="Firebase" x="-25vw" y="18vw"/>
             <Skill name="Tailwind CSS" x="18vw" y="18vw"/>
 
-            <QASkill name="Auto Testing" x="18vw" y="-5vw"/>
-            <QASkill name="Manual Testing" x="4vw" y="-15vw"/>
-            <QASkill name="Selenium" x="-27vw" y="-5vw"/>
+            <QASkill name="Collaboration" x="18vw" y="-5vw"/>
+            <QASkill name="Problem Solving" x="4vw" y="-15vw"/>
+            <QASkill name="Statistics" x="-27vw" y="-5vw"/>
 
-            <MLSkill name="Unsupervised Learning" x="-11vw" y="-18vw"/>
-            <MLSkill name="Neural Networks" x="-10vw" y="3vw"/>
-            <MLSkill name="Regression" x="30vw" y="0vw"/>
+            <MLSkill name="ML Fundamentals" x="-6vw" y="-10vw"/>
+            <MLSkill name="Algorithms" x="-10vw" y="3vw"/>
+            <MLSkill name="Creativity" x="30vw" y="0vw"/>
             
         </div>
     </>
