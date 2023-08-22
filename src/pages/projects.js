@@ -9,6 +9,8 @@ import project1 from '../../public/images/projects/crypto-screener-cover-image.j
 import projectOdessy from '../../public/images/projects/pr1-1.jpg'
 import projectOil from '../../public/images/projects/hair-oil.png'
 import pr5 from '../../public/images/projects/pr5.jpg'
+import pr6 from '../../public/images/projects/pr6.png'
+import pr7 from '../../public/images/projects/pr7.png'
 import pr3 from '../../public/images/projects/pr3.jpg'
 import gif1 from '../../public/images/projects/gif1.gif'
 import gif2 from '../../public/images/projects/gif2.gif'
@@ -42,7 +44,7 @@ const FeaturedProject = ({type,title,summary,img,link,github}) => {
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={github} target='_blank'><GithubIcon className="w-8 dark:w-8 xs:w-10"/></Link>
+                    <Link href={github} target='_blank'><GithubIcon className="w-24 xs:w-10"/></Link>
                     <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-white dark:text-dark 
                     sm:px-4 sm:text-base'>Visit Project</Link>
                 </div>
@@ -107,11 +109,21 @@ const DescProject = ({title,summary,img,link,github}) => {
                 <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
 
                 
-                <div className='mt-2 flex items-center gap-4'>
-                    <Link href={github} target='_blank'><GithubIcon className="w-8 dark:w-8 xs:w-10"/></Link>
-                    <Link href={link} target='_blank' className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-white dark:text-dark 
-                    sm:px-4 sm:text-sm sm:text-center'>Visit Project</Link>
-                    <div className='flex gap-3 sm:hidden'>
+                <div className='mt-2 w-full justify-between flex items-center gap-4'>
+                    <Link href={github} target='_blank'><GithubIcon className="w-24 xs:w-10"/></Link>
+                    <div className=' flex sm:flex-col gap-2'>
+                        <Link href={link} target='_blank' className=' rounded-lg bg-dark text-light py-2 px-6 text-lg font-semibold dark:bg-white dark:text-dark 
+                        sm:px-4 sm:text-sm sm:text-center'>Visit Project</Link>
+                        <Link
+                            href="/pong_rep.pdf"
+                            className='bg-orange-400 py-2 px-6 rounded-md text-light font-semibold cursor-pointer'
+                            download={true}
+                            target='_blank'>Report
+                            </Link>
+                    </div>
+
+
+                    <div className=' flex gap-3 sm:hidden lg:hidden md:hidden xl:hidden 2xl:hidden '>
                         {isHovering && (
                             <Image src={gif1} alt="BawaSen" className="w-[300px] absolute mt-12 z-20 h-auto lg:hidden md:w-full"/>
                         )}
@@ -136,12 +148,7 @@ const DescProject = ({title,summary,img,link,github}) => {
                         
                     </div>
                     <div>
-                        <Link
-                        href="/pong_rep.pdf"
-                        className='bg-orange-400 py-3 px-3 rounded-md text-light font-semibold cursor-pointer'
-                        download={true}
-                        target='_blank'>Report
-                        </Link>
+                        
                     </div>
                 </div>
             </div>
@@ -256,6 +263,28 @@ const projects = () => {
                                 type="Featured Project"
                                 img={projectOil}
                                 github="/"
+                            />
+                    </div>
+
+                    <div className='col-span-6 sm:col-span-12'>
+                        <FeaturedProject
+                                title="Sentiment Analysis Web application (Python)"
+                                summary="This application demonstrates the sentiment analysis of input texts from user, and to analyze the polarity and subjectivity to be able to determine if the input is positive, negative or neutral, using technologies such as vaderSentiment, Streamlit, pandas, altair and textBlob"
+                                link="https://sentiment-analysis-text-bawanga.streamlit.app/"
+                                type="Featured Project"
+                                img={pr7}
+                                github="https://github.com/bsen-alt/Sentiment-analysis-web-app-E.git"
+                            />
+                    </div>
+
+                    <div className='col-span-6 sm:col-span-12'>
+                        <FeaturedProject
+                                title="Dataset analyze and Classifier app (Python)"
+                                summary="Explore different Datasets and Classifiers with Streamlit and Scikit-learn. This project demonstrates how python based machine learning projects can be built into web applications with the functionality"
+                                link="https://ml-app-cls-data-bawanga.streamlit.app/"
+                                type="Featured Project"
+                                img={pr6}
+                                github="https://github.com/bsen-alt/Streamlit-App-Learn.git"
                             />
                     </div>
 
