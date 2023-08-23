@@ -10,6 +10,7 @@ import projectOdessy from '../../public/images/projects/pr1-1.jpg'
 import projectOil from '../../public/images/projects/hair-oil.png'
 import pr5 from '../../public/images/projects/pr5.jpg'
 import pr6 from '../../public/images/projects/pr6.png'
+import pr from '../../public/images/projects/pr.png'
 import pr7 from '../../public/images/projects/pr7.png'
 import pr3 from '../../public/images/projects/pr3.jpg'
 import gif1 from '../../public/images/projects/gif1.gif'
@@ -155,6 +156,17 @@ const projects = () => {
                 className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
 
                 <div className=' gap-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 px-72 sm:px-2'>
+
+                    <ProjectR
+                            title="Bawanga Senevirathne - portfolio"
+                            desc="This is my own portfolio 🤩"
+                            link="/#"
+                            stack="NextJS ⋅ Vercel ⋅ Framer Motion ⋅ Tailwind"
+                            img={pr}
+                            github="/"
+                            tag="Web.Dev."
+                            no_link="/"
+                        />
 
                     <Project
                             title="OdessyLanka"
