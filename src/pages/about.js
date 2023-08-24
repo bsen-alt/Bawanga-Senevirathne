@@ -51,7 +51,7 @@ const about = () =>{
             <Layout className='pt-16'>
                 <AnimatedText text="Passion Fuels Purpose! " className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'/>
                 <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
-                    <div className='col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 text-2xl'>
+                    <div className='col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 text-2xl sm:text-sm'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
                         <p className='font-medium'>👋 Howdy! I&apos;m Bawanga Senevirathne, a software engineering undergrad with a passion for software development, quality assurance, and an obsession with all things machine learning (yes, I dream about algorithms). 🤖 Solving problems and thinking logically are my superpowers – call me the Code Crusader!</p>
                         <p className='my-4 font-medium'>💻 Crafting clean code is my secret sauce, and I&apos;m on a mission to squash bugs like a ninja. 🐞 Quality is my middle name – no software leaves my hands without a seal of approval</p>

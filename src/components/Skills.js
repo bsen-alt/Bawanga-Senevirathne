@@ -55,8 +55,7 @@ const MLSkill = ({name, x, y}) =>{
 const SkillPro = ({img}) =>{
 
     return(
-        <motion.div className='items-center justify-center  w-32 overflow-hidden rounded-full hover:cursor-pointer border border-black dark:border-white'
-            
+        <motion.div className='items-center justify-center  w-32 sm:w-14 overflow-hidden rounded-full hover:cursor-pointer border border-black dark:border-white'
             >
                 <motion.img
                 whileHover={{scale:1.4} }
@@ -76,7 +75,7 @@ const Skills = () => {
   return (
     <>
         <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>Skills</h2>
-        <h3 className='text-2xl w-full text-center mt-12'>Professional Skills</h3>
+        <h3 className='text-2xl sm:text-xl w-full text-center mt-12'>Professional Skills</h3>
         {/* <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[70vw]
         lg:bg-circularLightLg lg:dark:bg-circularDarkLg
         md:bg-circularLightMd md:dark:bg-circularDarkMd
@@ -110,7 +109,7 @@ const Skills = () => {
         </div> */}
 
 
-            <div className='grid grid-cols-4 gap-x-2 gap-y-4 mt-16 px-96 mx-32 justify-center items-center'>
+            <div className='grid grid-cols-4 gap-2 gap-y-4 mt-16 px-96 sm:px-2 lg:px-4 lg:mx-4 xl:px-8 xl:ms-8 2xl:px-8 2xl:ms-8 3xl:px-96 3xl:mx-24   mx-auto sm:mx-2 justify-between items-center'>
                 <SkillPro img="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"/>
                 <SkillPro img="https://miro.medium.com/v2/resize:fit:632/1*5QD8DKhOjRe-gcYjozlLNQ.png"/>
                 <SkillPro img="https://th.bing.com/th/id/R.1f27d28017b7708d3f46fd8d1af4a383?rik=9XeWFvGi6xxgXw&riu=http%3a%2f%2fwww.annarpack.com%2fwp-content%2fuploads%2f2017%2f11%2freact_js.png&ehk=5orBxlR2x0NksKQKKlhMlpZMgIEZNnUsAZm%2ba7RXQbU%3d&risl=&pid=ImgRaw&r=0"/>
@@ -137,8 +136,8 @@ const Skills = () => {
             
 
 
-            <h3 className='text-2xl w-full text-center mt-12'>Personal Skills</h3>
-            <div className='grid grid-cols-4 gap-x-2 gap-y-4 mt-16 px-96 mx-32 justify-center items-center'>
+            <h3 className='text-2xl sm:text-xl w-full text-center mt-12'>Personal Skills</h3>
+            <div className='grid grid-cols-4 gap-x-2 gap-y-4 mt-16 px-96 sm:px-2 mx-18 sm:mx-2 lg:px-4 lg:mx-4 xl:px-8 xl:ms-8 2xl:px-8 2xl:ms-8 justify-center items-center'>
                 <SkillPro img="https://th.bing.com/th/id/OIP.Aqf9sSlHdf1TuOJs3mLFTQHaHa?pid=ImgDet&rs=1"/>
                 <SkillPro img="https://primary-careers.careersandenterprise.co.uk/sites/default/files/styles/logo_square/public/2020-08/3%20Problem%20Solving%20NS.png?itok=dh6nhvJE"/>
                 <SkillPro img="https://www.dlf.pt/dfpng/maxpng/136-1364971_time-management-png.png"/>
