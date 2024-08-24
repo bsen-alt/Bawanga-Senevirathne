@@ -1,13 +1,20 @@
 import React, { useRef } from 'react'
 import {motion, useScroll} from 'framer-motion'
 import Lilcon from './Lilcon';
+import Image from 'next/image'
+import sackImg from "../../website images/sack.png"
+import ouslImg from "../../website images/ousl.png"
 
-const Details = ({degree,institue,institueLink,time,edWork, courses}) =>{
+const Details = ({degree,institue,institueLink,time,edWork, courses,img}) =>{
     const ref = useRef(null)
 
-    return( <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex-col items-center justify-between md:w-[80%]'>
+    return( <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex gap-4 items-center justify-between md:w-[80%]'>
         
         <Lilcon reference={ref}/>
+        <motion.div className='className= w-[20%]'>
+            <Image  src={img} alt="BawaSen" className=' rounded-2xl items-center justify-center mx-auto'
+                        priority/>
+        </motion.div>
         <motion.div
             initial={{y:50}}
             whileInView={{y:0}}
@@ -58,7 +65,9 @@ const Education = () => {
                     institue="Open University of Sri Lanka"
                     institueLink="https://ou.ac.lk"
                     time= "2021-Present"
-                    edWork=" Year 3"
+                    edWork=" Year 4 - Final Year"
+                    img={ouslImg}
+                    courses="Present GPA @ 3.5"
                 />
 
                 <Details
@@ -66,14 +75,18 @@ const Education = () => {
                     institue="St.Anthony's College Kandy"
                     institueLink="https://www.sack.edu.lk/#gsc.tab=0"
                     time= "2018"
-                    edWork="In Physical Science Stream"
+                    edWork="Physical Science"
+                    img={sackImg}
                 />
                 <Details
-                    degree="Online Coursework"
-                    institueLink="https://sack.lk"
-                    edWork="Online courses related to my stream"
-                    courses="Machine Learning Basics" 
+                    degree="General Certificate Examination (G.C.E) - Ordinary Level"
+                    institue="St.Anthony's College Kandy"
+                    institueLink="https://www.sack.edu.lk/#gsc.tab=0"
+                    time= "2014"
+                    edWork=""
+                    img={sackImg}
                 />
+                
 
                 
             </ul>

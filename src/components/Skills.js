@@ -109,21 +109,21 @@ const Skills = () => {
         </div> */}
 
 
-            <div className='grid grid-cols-4 gap-2 gap-y-4 mt-16 px-96 sm:px-2 lg:px-4 lg:mx-4 xl:px-8 xl:ms-8 2xl:px-8 2xl:ms-8 3xl:px-96 3xl:mx-24   mx-auto sm:mx-2 justify-between items-center'>
+            <div className='grid grid-cols-4 gap-2 gap-y-4 mt-16 px-96 sm:px-2 lg:px-4 lg:mx-4 xl:px-8 xl:ms-8 2xl:px-8 2xl:ms-8 3xl:px-96 3xl:mx-24 mx-auto sm:mx-2 justify-between items-center'>
                 <SkillPro img="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"/>
                 <SkillPro img="https://miro.medium.com/v2/resize:fit:632/1*5QD8DKhOjRe-gcYjozlLNQ.png"/>
                 <SkillPro img="https://th.bing.com/th/id/R.1f27d28017b7708d3f46fd8d1af4a383?rik=9XeWFvGi6xxgXw&riu=http%3a%2f%2fwww.annarpack.com%2fwp-content%2fuploads%2f2017%2f11%2freact_js.png&ehk=5orBxlR2x0NksKQKKlhMlpZMgIEZNnUsAZm%2ba7RXQbU%3d&risl=&pid=ImgRaw&r=0"/>
                 <SkillPro img="https://www.drupal.org/files/project-images/nextjs-drupal.jpg"/>
 
                 <SkillPro img="https://global-uploads.webflow.com/5e684b7990d58376cf857cf2/5edeaf0e19badb462696823e_logo-js.jpg"/>
-                <SkillPro img="https://andriandev.com/wp-content/uploads/2023/03/Firebase.png"/>
+                <SkillPro img="https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png"/>
                 <SkillPro img="https://coralogix.com/wp-content/uploads/2018/04/Coralogix-Nodejs-integration.jpg"/>
                 <SkillPro img="https://logodix.com/logo/2090013.jpg"/>
 
                 <SkillPro img="https://brandlogos.net/wp-content/uploads/2021/11/visual-studio-code-logo.png"/>
                 <SkillPro img="https://www.pngrepo.com/png/303251/512/mysql-logo.png"/>
                 <SkillPro img="https://cdn-icons-png.flaticon.com/512/919/919830.png"/>
-                <SkillPro img="https://andriandev.com/wp-content/uploads/2023/03/Firebase.png"/>
+                <SkillPro img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7Cz8u1osCDYZx9PDTtCdGmDvrE97lO9d-l1sj426SQRbhOwf5C_CpMWkz2P8RTZXgis&usqp=CAU"/>
 
                 <SkillPro img="https://www.researchgate.net/profile/Hamed-Baghal-Ghaffari/publication/357203295/figure/fig9/AS:1104459803426816@1640335145379/b-Plots-of-2-dimension-CPSWFs-for-k-1-c-1-n-1-e2-part_Q640.jpg"/>
                 <SkillPro img="https://cdn0.iconfinder.com/data/icons/data-analytics-orchid-vol-1/256/Decision_Tree-512.png"/>
@@ -140,8 +140,12 @@ const Skills = () => {
             <div className='grid grid-cols-4 gap-x-2 gap-y-4 mt-16 px-96 sm:px-2 mx-18 sm:mx-2 lg:px-4 lg:mx-4 xl:px-8 xl:ms-8 2xl:px-8 2xl:ms-8 justify-center items-center'>
                 <SkillPro img="https://th.bing.com/th/id/OIP.Aqf9sSlHdf1TuOJs3mLFTQHaHa?pid=ImgDet&rs=1"/>
                 <SkillPro img="https://primary-careers.careersandenterprise.co.uk/sites/default/files/styles/logo_square/public/2020-08/3%20Problem%20Solving%20NS.png?itok=dh6nhvJE"/>
-                <SkillPro img="https://www.dlf.pt/dfpng/maxpng/136-1364971_time-management-png.png"/>
-                <SkillPro img="https://www.youth-social-action.careersandenterprise.co.uk/sites/default/files/2019-06/5a9813fa3c7b7d0001a3d3bd_7%20Leadership-p-500.png"/>
+                <SkillPro img="https://www.retaillearning.net/wp-content/uploads/2022/05/TIme-management.png"/>
+                <SkillPro img="https://img.freepik.com/premium-vector/leadership-round-icon-illustration-outline-style_104589-615.jpg"/>
+                <SkillPro img="https://images.credly.com/images/c5fe6c63-d40a-48d8-93b6-d5584bc8b6f2/Badge_CT_KNO_600x600.png"/>
+                <SkillPro img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Hdox-K1MpP9NMSGI3gC5RxAb3odQDyBobqm97T47TlcPALBGW6aWDHEA1hxrpfaEMDY&usqp=CAU"/>
+                <SkillPro img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDehCo_DH0Qt2JPbh2iBkzPgkMOIYU8HtdpmUtpPnBCrIXxcdPfbNRzUUrbrTFSYkAewc&usqp=CAU"/>
+                <SkillPro img="https://healthsciences.appstate.edu/sites/healthsciences.appstate.edu/files/screen_shot_2019-08-02_at_9.48.31_am.png"/>
             </div>
             
     </>

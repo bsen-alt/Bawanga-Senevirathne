@@ -1,14 +1,27 @@
 import React, { useRef } from 'react'
 import {motion, useScroll} from 'framer-motion'
 import Lilcon from './Lilcon';
+import profilePicBawa from "../../public/images/profile/photo-bawa.jpg"
+import Image from 'next/image'
+import pharmaImg from "../../website images/logo-70-70.png"
+import emindImg from "../../website images/emind.png"
+import etechImg from "../../website images/etech.png"
+import iimlImg from "../../website images/iiml.png"
+import mbreyImg from "../../website images/mbrey.png"
 
-const Details = ({position,company,companyLink,time,address,work}) =>{
+const Details = ({position,company,companyLink,time,address,work,img}) =>{
     const ref = useRef(null)
 
-    return( <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex-col items-center justify-between md:w-[80%]'>
+    return( <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex gap-4 items-center justify-between md:w-[80%]'>
         
         <Lilcon reference={ref}/>
+        <motion.div className='className= w-[20%]'>
+            <Image  src={img} alt="BawaSen" className=' rounded-2xl items-center justify-center mx-auto'
+                        priority/>
+        </motion.div>
+
         <motion.div
+        className='w-[80%]'
             initial={{y:50}}
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
@@ -18,7 +31,7 @@ const Details = ({position,company,companyLink,time,address,work}) =>{
             className='text-primary dark:text-primaryDark capitalize'
             >@{company}</a></h3>
             <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
-                {time} | {address}
+                {time} <br/> {address}
             </span>
             <p className='font-medium w-full md:text-sm'>
                 {work}
@@ -52,42 +65,58 @@ const Experience = () => {
 
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
-                    position="DATA ENTRY OPERATOR"
-                    company="Intelligent Image Management Inc. (IIMI) – Sri Lanka"
-                    companyLink="https://www.iimdirect.com/"
-                    time= "(2022 January - Present"
+                    position="BUSINESS DEVELOPMENT ENGINEER - 
+MANUFACTURING AUTOMATION (Training)"
+                    company="Pharma Engineering Pvt. Ltd – Sri Lanka"
+                    companyLink="https://aarnd.com/"
+                    time= "2023 August - 2024 March"
                     address="36 A Nawala Road, Nugegoda
                     SRI LANKA"
-                    work="Working on a team responsible for quality oriented data logging and data quality checking before handling over."
+                    work="Identified and cultivated new business opportunities, forging strategic partnerships, and optimizing manufacturing process through automation solutions."
+                    img={pharmaImg}
+                />
+                <Details
+                    position="DATA ENTRY ANALYST"
+                    company="Intelligent Image Management Inc. (IIMI) – Sri Lanka"
+                    companyLink="https://www.iimdirect.com/"
+                    time= "2022 January - 2023 July"
+                    address="203/D/1 Athurugiriya Rd, Pannipitiya 10230
+                    SRI LANKA"
+                    work="Worked on a team responsible for quality oriented data logging and data quality checking before handling over. We have consistently surpassed speed and precision targets"
+                    img={iimlImg}
                 />
 
                 <Details
                     position="JUNIOR SOFTWARE ENGINEER"
                     company="Aus-ETech Pvt. Ltd."
-                    companyLink="http://ausetech.com.au/"
-                    time= "2021 November – 2022 May"
+                    companyLink="https://www.facebook.com/aus.etech.2019/?paipv=0&eav=AfYJOu16kIt-lBO9hNu7zhWK01FiWZt0aTW0Dsmc5BhKu5fA6fqZPzVpNL1RfSzj5NA&_rdr"
+                    time= "2021 December – 2022 May"
                     address="Unit 2, 5 McPhail Road
                     Coomera QLD 4209"
-                    work="Worked on a team responsible for developing web oriented applications with technologies such as PHP, MYSQL etc. Full Stack development is done within the team and all the engineers participated on it. I worked mostly on back-end development."
+                    work="Worked on a team responsible for developing web oriented applications with technologies such as PHP, MYSQL etc. Full Stack development is done within the team with all engineers participated. Innovated new products, enhanced existing software and ensured project progress and adherence to timelines"
+                    img={etechImg}
                 />
 
                 <Details
                     position="VISITING LECTURER - ICT"
                     company="Mowbray College, Kandy, Sri Lanka"
                     companyLink="https://mowbraycollege.lk/"
-                    time= "2018 August - 2018 December"
+                    time= "2021 August - 2021 December"
                     address="7JPR+RF5, Rajapihilla Mawatha, Kandy"
-                    work="Worked as a visiting Lecturer, which the position enabled to teach student from Grade 10,11 and GCE Advanced Level Students"
+                    work="Worked as a visiting Lecturer, which the position enabled to teach student from Grade 10,11 and GCE Advanced Level Students. Fostered a learning-focused environment, promoting student participation and growth. provided targeted assistance to struggling students"
+                    img={mbreyImg}
                 />
 
                 <Details
                     position="VISITING LECTURER - ICT"
                     company="E-Mind Srl. Kandy, Sri Lanka"
-                    companyLink="https://www.e-mind.it/"
-                    time= "2018 January - 2018 December"
+                    companyLink="https://www.facebook.com/emindkandy/"
+                    time= "2021 January - 2021 December"
                     address=" "
-                    work="Worked as a visiting Lecturer, which the position enabled to teach student from Grade 10,11"
+                    work="Worked as a visiting Lecturer, which the position enabled to teach student from Grade 10,11. Fostered a learning-focused environment, promoting student participation and growth. provided targeted assistance to struggling students"
+                    img={emindImg}
                 />
+                
             </ul>
         </div>
 

@@ -42,7 +42,7 @@ const about = () =>{
   return (
     <>
         <Head>
-            <title>Bawanga Senevirathne | About Page</title>
+            <title>About | Bawanga Senevirathne</title>
             <meta name='description' content='any description'/>
         </Head>
         <TransitionEffect/>
@@ -64,7 +64,7 @@ const about = () =>{
 
                     </div>
 
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8'>
+                    <div className='col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-8 xl:col-span-4 md:order-1 md:col-span-8'>
                         <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light  '/>
                         {/* <Image src={profilePic} alt="BawaSen" className='w-full h-auto rounded-2xl'
                         priority

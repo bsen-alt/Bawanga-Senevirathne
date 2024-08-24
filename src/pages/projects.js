@@ -9,6 +9,7 @@ import project1 from '../../public/images/projects/crypto-screener-cover-image.j
 import projectOdessy from '../../public/images/projects/pr1-1.jpg'
 import projectOil from '../../public/images/projects/hair-oil.png'
 import pr5 from '../../public/images/projects/pr5.jpg'
+import smsImg from '../../public/images/projects/smsImg.jpg'
 import pr6 from '../../public/images/projects/pr6.png'
 import pr from '../../public/images/projects/pr.png'
 import pr7 from '../../public/images/projects/pr7.png'
@@ -25,7 +26,7 @@ const FramerImage = motion(Image);
 
 const Project = ({img,title,desc,stack,link,github,no_link,tag}) =>{
     return(
-        <article className='w-full flex sm:flex-col items-center justify-between bg-light dark:bg-dark  mt-24 sm:mt-6 border border-solid border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
+        <article className='w-full flex sm:flex-col items-center justify-between bg-light dark:bg-dark  mt-12 sm:mt-6 border border-solid border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
 
 {/* border border-solid border-dark dark:border-light shadow-2xl*/}
             {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/> */}
@@ -63,7 +64,7 @@ const Project = ({img,title,desc,stack,link,github,no_link,tag}) =>{
 
 const ProjectR = ({img,title,desc,stack,link,github,no_link,tag}) =>{
     return(
-        <article className='w-full flex sm:flex-col items-center justify-between   bg-light dark:bg-dark  mt-24 border border-solid border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
+        <article className='w-full flex sm:flex-col items-center justify-between   bg-light dark:bg-dark  mt-12 border border-solid border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
 
 {/* border border-solid border-dark dark:border-light shadow-2xl*/}
             {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/> */}
@@ -104,13 +105,13 @@ const ProjectR = ({img,title,desc,stack,link,github,no_link,tag}) =>{
 
 const ProjectOng = ({img,title,desc,stack,tag,report,dataset}) =>{
     return(
-        <article className='w-full flex sm:flex-col items-center justify-between   bg-light dark:bg-dark  mt-24 border-solid border border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
+        <article className='w-full flex sm:flex-col items-center justify-between   bg-light dark:bg-dark  mt-12 border-solid border border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
 
 {/* border border-solid border-dark dark:border-light shadow-2xl*/}
             {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/> */}
             <Link href={""} target='_blank' 
             className='w-full cursor-pointer overflow-hidden rounded-xl'>
-                <FramerImage src={img} alt={title} className='w-full'
+                <FramerImage src={img} alt={title} className='h-72'
                 whileHover={{scale:1.05}}
                 transition={{duration:0.2}}
                 priority
@@ -139,7 +140,42 @@ const ProjectOng = ({img,title,desc,stack,tag,report,dataset}) =>{
     )
 }
 
+const ProjectOngNonML = ({img,title,desc,stack,tag,report,dataset}) =>{
+    return(
+        <article className='w-full flex sm:flex-col items-center justify-between   bg-light dark:bg-dark  mt-12 border-solid border border-dark dark:border-light px-4 py-4 sm:px-2 sm:py-3 rounded-2xl'>
 
+{/* border border-solid border-dark dark:border-light shadow-2xl*/}
+            {/* <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/> */}
+            <Link href={""} target='_blank' 
+            className='w-full cursor-pointer overflow-hidden rounded-xl'>
+                <FramerImage src={img} alt={title} className='h-72'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                priority
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                50vw"/>
+            </Link>
+
+            <div className='w-full flex flex-col items-start justify-between px-8 sm:px-2'>
+                <div className='w-full flex sm:flex-col items-center justify-between gap-4'>
+                    <h2 className='text-2xl font-bold sm:mt-2 sm:text-xl'>{title}</h2>
+                    <div className='w-full flex  items-center justify-between'>
+                        <p className='bg-dark text-light px-2 py-1 rounded-lg text-sm dark:bg-light dark:text-dark my-2'>{tag}</p>
+                    </div>
+                </div>
+                <p className='sm:text-sm'>{desc}</p>
+                <span className='text-primary dark:text-primaryDark font-bold mt-4 sm:text-sm'>{stack}</span>
+                
+                <div className='flex gap-4 font-semibold mt-4'>
+                    {/* <Link href={link} target='_blank' className='border border-solid border-dark dark:border-light px-4 py-2 rounded-lg'> Report</Link> */}
+                    <Link aria-disabled={true} href={'/'} target='_blank' className='border border-solid border-dark dark:border-light px-4 py-2 rounded-lg sm:py-1 items-center text-center'>Project on Planning...</Link>
+                   
+                </div>
+            </div>
+        </article>
+    )
+}
 
 const projects = () => {
   return (
@@ -164,7 +200,7 @@ const projects = () => {
                             stack="NextJS ⋅ Vercel ⋅ Framer Motion ⋅ Tailwind"
                             img={pr}
                             github="/"
-                            tag="Web.Dev."
+                            tag="Web.Dev"
                             no_link="/"
                         />
 
@@ -175,7 +211,7 @@ const projects = () => {
                             stack="React ⋅ Tailwind ⋅ Redux ⋅ Firebase ⋅ Stripe ⋅ Vite"
                             img={projectOdessy}
                             github="/"
-                            tag="Web.Dev."
+                            tag="Web.Dev"
                         />
 
                     <ProjectR
@@ -228,8 +264,18 @@ const projects = () => {
                 className='mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl '/>
 
                 <div className='px-72 sm:px-2'>
+                    <ProjectOngNonML
+                            title="StudioPro"
+                            desc="A Studio Management System for a reputed Wedding photography studio in Kandy"
+                            stack="React w/Next.js ⋅ Redux ⋅ Node.js ⋅ PostgreSQL ⋅ AWS"
+                            img={smsImg}
+                            github=""
+                            tag="Web.Dev"
+                            report="/"
+                            dataset=""
+                        />
                     <ProjectOng
-                            title="MediSynth"
+                            title="DisPred"
                             desc="Disease Identification web application with Machine Learning"
                             stack="Python ⋅ Kaggle "
                             img={pr5}
