@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
-    "@sanity/vision": "^3.14.4",
+    "@sanity/vision": "^3.55.0",
     "axios": "^1.4.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
@@ -23,12 +23,12 @@
     "gray-matter": "^4.0.3",
     "marked": "^5.1.2",
     "next": "^14.2.6",
-    "next-sanity": "^5.1.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next-sanity": "^9.4.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "sanity": "^3.55.0",
     "sharp": "^0.32.4",
-    "styled-components": "5.2"
+    "styled-components": "6.1"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",

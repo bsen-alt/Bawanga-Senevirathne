@@ -1,0 +1,50 @@
+[debug] [2024-08-24T16:04:37.110Z] ----------------------------------------------------------------------
+[debug] [2024-08-24T16:04:37.112Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-24T16:04:37.112Z] CLI Version:   12.4.6
+[debug] [2024-08-24T16:04:37.113Z] Platform:      win32
+[debug] [2024-08-24T16:04:37.113Z] Node Version:  v18.17.0
+[debug] [2024-08-24T16:04:37.114Z] Time:          Sat Aug 24 2024 21:34:37 GMT+0530 (India Standard Time)
+[debug] [2024-08-24T16:04:37.114Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-24T16:04:37.117Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-24T16:04:37.230Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-24T16:04:37.231Z] > authorizing via signed-in user (bawasen12@gmail.com)
+[debug] [2024-08-24T16:04:37.231Z] [iam] checking project bawa-portfolio for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-24T16:04:37.232Z] > refreshing access token with scopes: []
+[debug] [2024-08-24T16:04:37.233Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-24T16:04:37.233Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:37.424Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-08-24T16:04:37.424Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:37.424Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bawa-portfolio:testIamPermissions [none]
+[debug] [2024-08-24T16:04:37.424Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bawa-portfolio:testIamPermissions x-goog-quota-user=projects/bawa-portfolio
+[debug] [2024-08-24T16:04:37.424Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bawa-portfolio:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-24T16:04:37.822Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-24T16:04:37.822Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-24T16:04:38.594Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bawa-portfolio:testIamPermissions 401
+[debug] [2024-08-24T16:04:38.595Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bawa-portfolio:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-08-24T16:04:38.595Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-24T16:04:38.596Z] > refreshing access token with scopes: []
+[debug] [2024-08-24T16:04:38.596Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-24T16:04:38.596Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:38.765Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-08-24T16:04:38.765Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:38.765Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/bawa-portfolio/serviceAccounts/bawa-portfolio@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2024-08-24T16:04:38.765Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/bawa-portfolio/serviceAccounts/bawa-portfolio@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2024-08-24T16:04:40.816Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/bawa-portfolio/serviceAccounts/bawa-portfolio@appspot.gserviceaccount.com:testIamPermissions 401
+[debug] [2024-08-24T16:04:40.816Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/bawa-portfolio/serviceAccounts/bawa-portfolio@appspot.gserviceaccount.com:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.iam.admin.v1.IAM.TestIamPermissions","service":"iam.googleapis.com"}}]}}
+[debug] [2024-08-24T16:04:40.817Z] [functions] service account IAM check errored, deploy may fail: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.iam.admin.v1.IAM.TestIamPermissions","service":"iam.googleapis.com"}}]}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401}
+[debug] [2024-08-24T16:04:40.819Z] > refreshing access token with scopes: []
+[debug] [2024-08-24T16:04:40.821Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-24T16:04:40.821Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:40.970Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-08-24T16:04:40.970Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-24T16:04:40.972Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bawa-portfolio [none]
+[debug] [2024-08-24T16:04:41.189Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bawa-portfolio 401
+[debug] [2024-08-24T16:04:41.189Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bawa-portfolio {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-08-24T16:04:41.190Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-24T16:04:41.360Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project bawa-portfolio. Please make sure the project exists and your account has permission to access it.
